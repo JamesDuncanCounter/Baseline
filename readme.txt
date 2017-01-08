@@ -1,5 +1,5 @@
-Baseline Front End Framework by James Counter
+<h1>Baseline Front End Framework by James Counter</h1>
 
-Using bootstrap, Sass & Grunt.
+<p>Using bootstrap, Sass & Grunt.</p>
 
-This is a work in progress.
+<p>This is a work in progress.</p>
