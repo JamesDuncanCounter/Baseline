@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       },
       my_targets: {
         files: {
-          'public/dist/js/main.min.js' : ['public/dev/javascript/bootstrap.js', 'public/dev/app/**/*.js']
+          'public/dist/js/main.min.js' : ['node_modules/jquery/dist/jquery.js', 'dev/javascript/bootstrap.js', 'dev/app/**/*.js']
         }
       }
     },    
@@ -22,13 +22,13 @@ module.exports = function(grunt) {
           sourcemap: 'none',
         },
         files: {
-          'public/dist/stylesheets/style.css' : 'public/dev/stylesheets/style.scss'
+          'dist/stylesheets/style.css' : 'dev/stylesheets/style.scss'
         }
       }
     },
 
     watch: {
-        files: ['./public/**/*.scss', './public/dev/app/**/*.js'],
+        files: ['./dev/**/*.scss', './dev/app/**/*.js'],
         tasks: ['sass', 'uglify']
     }
   });
