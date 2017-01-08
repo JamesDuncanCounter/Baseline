@@ -3,21 +3,23 @@ body {
 }
 
 header {
-	padding: 20px;
-	border: solid 2px red;
+	
+	
 	@include make-xs-column(12);
-	@include make-sm-column(6);
-	@include make-md-column(12);
+	
 	background-color: green;
 	
-	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	// Target small Brealpoint
+	@media (min-width: $screen-sm) {
 		background-color: blue;
 	} 
-
+	
+	// Target medium Brealpoint
 	@media (min-width: $screen-md) {
 		background-color: pink;
 	} 
-
+	
+	// Target large Brealpoint
 	@media (min-width: $screen-lg) {
 		background-color: red;
 	} 
