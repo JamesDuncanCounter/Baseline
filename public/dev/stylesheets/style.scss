@@ -21,6 +21,10 @@
 @import "bootstrap/forms";
 @import "bootstrap/buttons";
 
+// Custom Styles
+@import "../app/article/article";
+@import "../app/template/template";
+
 // Components
 @import "bootstrap/component-animations";
 @import "bootstrap/dropdowns";
@@ -48,5 +52,4 @@
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
-// Custom Styles
-@import "../app/article"
+
