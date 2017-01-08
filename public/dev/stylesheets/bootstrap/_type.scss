@@ -2,6 +2,33 @@
 // Typography
 // --------------------------------------------------
 
+// Custom Fonts 
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'Muli-Regular';
+  src: url('../fonts/Muli-Regular.ttf')  format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Muli-Italic';
+  src: url('../fonts/Muli-Italic.ttf')  format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url('../fonts/Muli-Bold.ttf')  format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Muli-Black';
+  src: url('../fonts/Muli-Black.ttf')  format('truetype');
+  font-weight: 900;
+}
 
 // Headings
 // -------------------------
