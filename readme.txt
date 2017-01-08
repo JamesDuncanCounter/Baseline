@@ -1,21 +1,5 @@
-Welcome to Craft CMS!
+Baseline Front End Framework by James Counter
 
-Here are some online resources you might find useful:
+Using bootstrap, Sass & Grunt.
 
-
-Documentation
------------------------------------------------------------------
-Installation instructions and much more.
-https://craftcms.com/docs
-
-
-Changelog
------------------------------------------------------------------
-Release notes with bug fixes, improvements and additions.
-https://craftcms.com/changelog
-
-
-Stack Exchange
------------------------------------------------------------------
-A great place to ask your Craft questions, meet the awesome Craft community and earn mad reputation.
-https://craftcms.stackexchange.com/
+This is a work in progress.
