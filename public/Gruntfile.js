@@ -4,6 +4,16 @@ module.exports = function(grunt) {
     
     pkg: grunt.file.readJSON('package.json'),
     
+    connect: {
+      dist: {
+        options: {
+          port: 3001,
+          base: 'dist',
+          livereload: true
+        }
+      }
+    },
+
     concat: {
       js: {
         files: {
@@ -36,6 +46,9 @@ module.exports = function(grunt) {
     },
 
     watch: {
+        options: {
+          livereload: true,
+        },
         files: ['./dev/**/*.scss', './dev/app/**/*.js'],
         tasks: ['sass', 'concat', 'uglify']
     }
@@ -45,5 +58,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.registerTask('default',['concat', 'sass', 'uglify', 'watch']);
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  
+  grunt.registerTask('default',[
+    'connect',
+    'concat', 
+    'sass', 
+    'uglify', 
+    'watch'
+  ]);
 }

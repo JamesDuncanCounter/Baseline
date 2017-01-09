@@ -3,8 +3,7 @@ body {
 }
 
 header {
-	
-	
+	//Set div to 12 columns
 	@include make-xs-column(12);
 	
 	background-color: green;
@@ -16,8 +15,9 @@ header {
 	
 	// Target medium Brealpoint
 	@media (min-width: $screen-md) {
-		background-color: pink;
-	} 
+		background-color: orange;
+	}
+
 	
 	// Target large Brealpoint
 	@media (min-width: $screen-lg) {
