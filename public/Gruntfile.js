@@ -8,7 +8,6 @@ module.exports = function(grunt) {
       dist: {
         options: {
           port: 3001,
-          base: 'dist',
           livereload: true
         }
       }
@@ -49,7 +48,7 @@ module.exports = function(grunt) {
         options: {
           livereload: true,
         },
-        files: ['./dev/**/*.scss', './dev/app/**/*.js'],
+        files: ['./dev/**/*.scss', './dev/app/**/*.js', './dev/app/**/*.html'],
         tasks: ['sass', 'concat', 'uglify']
     }
   });
