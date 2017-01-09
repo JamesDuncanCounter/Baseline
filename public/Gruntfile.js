@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     concat: {
       js: {
         files: {
-          'dist/js/bundle.js': ['node_modules/jquery/dist/jquery.js', 'dev/javascript/bootstrap.js', 'dev/app/**/*.js']
+          'dev/javascript/bundle.js': ['node_modules/jquery/dist/jquery.js', 'dev/javascript/bootstrap.js', 'dev/app/**/*.js']
         }
       }
     },
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       },
       my_targets: {
         files: {
-          'dist/js/main.min.js' : ['dist/js/bundle.js']
+          'dist/js/main.min.js' : ['dev/javascript/bundle.js']
         }
       }
     },    
