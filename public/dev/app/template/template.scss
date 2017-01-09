@@ -6,7 +6,7 @@ header {
 	//Set div to 12 columns
 	@include make-xs-column(12);
 	
-	background-color: green;
+	background-color: blue;
 	
 	// Target small Brealpoint
 	@media (min-width: $screen-sm) {

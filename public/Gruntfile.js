@@ -1,14 +1,19 @@
 module.exports = function(grunt) {
-  
+    
+
   grunt.initConfig({
     
     pkg: grunt.file.readJSON('package.json'),
     
-    connect: {
-      dist: {
+    express: {
+      prod: {
         options: {
+          server: 'express-server.js',
+          bases: ['./'],
           port: 3001,
-          livereload: true
+          hostname: "*",
+          livereload: true,
+          keepalive: false
         }
       }
     },
@@ -57,13 +62,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-express');
   
   grunt.registerTask('default',[
-    'connect',
+    'express', 
     'concat', 
     'sass', 
     'uglify', 
     'watch'
   ]);
+  
+
 }
